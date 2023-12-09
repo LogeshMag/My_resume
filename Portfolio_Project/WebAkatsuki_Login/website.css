@@ -1,0 +1,92 @@
+body
+{
+    display: grid;
+    margin: 0;
+    background-color: white;
+}
+
+.Container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 705px;
+    grid-template-areas: "head head" 
+                         "left-Main right-Main";
+    background-image: url("./images/akatsuki.jpg");
+    background-size: cover;
+}
+
+header
+{
+    display: flex;
+    grid-area: head;
+    background-size: contain;
+}
+
+.Head_nav 
+{
+    display: flex;
+}
+
+header #webLogo
+{
+    margin-left: 200px;
+    border-radius: 40px;
+    height: 80px;
+    width: 120px;
+    align-self: center;
+    opacity: 0.90;
+}
+
+.Head_nav ul 
+{
+    display: flex;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    margin-left: 400px;
+}
+
+.Head_nav ul li
+{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0, 0.80);
+    color: white;
+    font-weight: 400;
+    margin-left: 35px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.Head_nav ul li a
+{
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.Head_nav ul li:hover
+{
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.80);
+}
+ 
+.Main_lside
+{
+    grid-area: left-Main;
+}
+
+.lside_content
+{
+    margin: 10px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Main_rside
+{
+    grid-area: right-Main;
+}
+
